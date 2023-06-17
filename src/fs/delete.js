@@ -1,5 +1,7 @@
-const remove = async () => {
-    // Write your code here 
-};
+const remove = async () => {};
 
-await remove();
+try {
+  await remove();
+} catch (err) {
+  throw err;
+}
