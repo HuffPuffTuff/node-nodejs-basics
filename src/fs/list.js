@@ -1,4 +1,4 @@
-import path, { resolve } from 'path';
+import path from 'path';
 import { promises as fs } from 'fs';
 import { fileURLToPath } from 'url';
 

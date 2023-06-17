@@ -1,5 +1,5 @@
-import path, { resolve } from 'path';
-import { promises as fs, createReadStream } from 'fs';
+import path from 'path';
+import { createReadStream } from 'fs';
 import { fileURLToPath } from 'url';
 
 const read = async () => {
