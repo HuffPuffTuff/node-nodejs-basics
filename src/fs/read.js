@@ -1,5 +1,24 @@
+import path, { resolve } from 'path';
+import { promises as fs, createReadStream } from 'fs';
+import { fileURLToPath } from 'url';
+
 const read = async () => {
-    // Write your code here 
+  const __dirname = fileURLToPath(new URL('.', import.meta.url));
+  const filePath = path.resolve(__dirname, 'files', 'fileToRead.txt');
+
+  const stream = createReadStream(filePath);
+
+  stream.on('error', () => {
+    throw new Error('FS operation failed');
+  });
+
+  stream.on('data', (data) => {
+    console.log(data.toString());
+  });
 };
 
-await read();
+try {
+  await read();
+} catch (err) {
+  throw err;
+}

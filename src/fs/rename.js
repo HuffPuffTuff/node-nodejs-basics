@@ -1,5 +1,5 @@
-import { resolve, join } from 'path';
-import { promises as fs, copyFile } from 'fs';
+import { resolve } from 'path';
+import { promises as fs } from 'fs';
 import { fileURLToPath } from 'url';
 
 const rename = async () => {
