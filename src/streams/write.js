@@ -1,7 +1,6 @@
 import { createWriteStream } from 'fs';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { Writable } from 'stream';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
