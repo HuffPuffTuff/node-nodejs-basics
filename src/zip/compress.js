@@ -1,6 +1,6 @@
-import { resolve } from 'path';
 import { createWriteStream, createReadStream } from 'node:fs';
 import { fileURLToPath } from 'url';
+import { resolve } from 'path';
 import { createGzip } from 'zlib';
 
 const compress = async () => {
